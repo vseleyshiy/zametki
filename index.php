@@ -9,21 +9,25 @@
 </head>
 
 <body>
-    <h1>Заметки</h1>
+    <div class="title">Заметки</div>
     <form method="post" action="display_notes.php">
-        <label for="name">Название:</label>
-        <input type="text" name="name" id="name" required> <br>
-
-        <label for="category">Категория:</label>
-        <select name="category" id="category" required>
-            <option value="Книга">Книга</option>
-            <option value="Мультфильм">Мультфильм</option>
-            <option value="Фильм">Фильм</option>
-        </select> <br>
-        
-        <input type="submit" value="Добавить">
+        <div class="menu">
+            <div class="name__menu">
+                <label for="name" class="name">Название:</label>
+                <input type="text" name="name" id="name" required> <br>
+            </div>
+            <div class="category__menu">
+                <label for="category" class="category">Категория:</label>
+                <select name="category" id="category" required>
+                    <option value="Книга">Книга</option>
+                    <option value="Мультфильм">Мультфильм</option>
+                    <option value="Фильм">Фильм</option>
+                </select>
+            </div>
+            <input type="submit" value="Добавить">
+        </div>
     </form>
-    <table border="1">
+    <table class="table">
         <tr>
             <th>Название</th>
             <th>Категория</th>
